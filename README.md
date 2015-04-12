@@ -36,5 +36,6 @@ Video Walkthrough
 ---
 
 ![Video Walkthrough](tipCalc1.gif)
+![Video Walkthrough](tipCalc_lang.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
