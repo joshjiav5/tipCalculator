@@ -7,7 +7,7 @@
 //
 
 #import "CurrentUser.h"
-#import "TipCalcConst.h"
+#import "Constants.h"
 
 @implementation CurrentUser
 
@@ -21,18 +21,50 @@ static User *_currentUser;
 }
 
 + (void)saveCurrentUser {
+    _currentUser.lastActiveDate = [[NSDate alloc] init];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSData *encodedObject = [NSKeyedArchiver archivedDataWithRootObject:[self currentUser]];
-    [defaults setObject:encodedObject forKey:kTipCalcDefaultUserKey];
+    [defaults setObject:encodedObject forKey:kDefaultUserID];
     [defaults synchronize];
 }
 
-+ (void)loadCurrentUser {
++ (User *)loadCurrentUser {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSData *encodedObject = [defaults objectForKey:kTipCalcDefaultUserKey];
+    NSData *encodedObject = [defaults objectForKey:kDefaultUserID];
     if (encodedObject) {
-        _currentUser = [NSKeyedUnarchiver unarchiveObjectWithData:encodedObject];
+        id userObj = [NSKeyedUnarchiver unarchiveObjectWithData:encodedObject];
+        if ([userObj isKindOfClass:[User class]]) {
+            return userObj;
+        }
     }
+    
+    return nil;
+}
+
++ (void)loadCurrentUserWithoutTimeCheck {
+    _currentUser = [self loadCurrentUser];
+}
+
++ (void)loadCurrentUserWithTimeCheck {
+    User *tmpUser = [self loadCurrentUser];
+    if (![self timeCheckUserLastActive:tmpUser.lastActiveDate timeOut:tmpUser.timeOutTimeInMinute]) {
+        tmpUser.billAmount = @"0";
+    }
+    _currentUser = tmpUser;
+}
+
++ (BOOL)timeCheckUserLastActive:(NSDate *)lastActiveDate timeOut:(NSString *)timeOutTimeInMinute {
+    NSDate *now = [[NSDate alloc] init];
+    NSTimeInterval distanceBetweenDates = [now timeIntervalSinceDate:lastActiveDate];
+    double secondsInAMinute = 60;
+    double minutesBetweenDates = distanceBetweenDates / secondsInAMinute;
+    
+    if (minutesBetweenDates < timeOutTimeInMinute.doubleValue) {
+        return YES;
+    } else {
+        return NO;
+    }
+    
 }
 
 @end

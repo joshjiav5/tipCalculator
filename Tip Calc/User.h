@@ -11,9 +11,18 @@
 
 @interface User : NSObject
 
-@property (nonatomic, strong) NSNumber *tipSetting;
-@property (nonatomic, strong) NSString *billAmountString;
+@property (nonatomic, strong) NSString *tipSetting;
+@property (nonatomic, strong) NSString *maxTipSetting;
+@property (nonatomic, strong) NSString *minTipSetting;
+@property (nonatomic, strong) NSString *billAmount;
+@property (nonatomic, strong) NSString *maxSplitCount;
+@property (nonatomic, strong) NSString *timeOutTimeInMinute;
+@property (nonatomic, strong) NSNumber *isNumKeyboardOnly;
+@property (nonatomic, strong) NSDate *lastActiveDate;
+@property (nonatomic) float lastKeyboardHeight;
+@property (nonatomic, strong, readonly) Bill *bill;
 
-- (Bill *)getBill:(NSString *)amount;
+- (void)calculateBill;
+- (void)setTipSettingWithFloat:(float)value;
 
 @end

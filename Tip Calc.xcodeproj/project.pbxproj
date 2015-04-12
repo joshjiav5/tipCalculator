@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F145ADC91ADAEF8D00B0EA74 /* SettingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F145ADC81ADAEF8D00B0EA74 /* SettingTableViewController.m */; };
+		F1597EA01AD9CE17006FE65E /* SplitBillCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F1597E9F1AD9CE17006FE65E /* SplitBillCell.m */; };
+		F1597EA31AD9D023006FE65E /* NSNumber+NiceFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F1597EA21AD9D023006FE65E /* NSNumber+NiceFormatter.m */; };
+		F1597EA61AD9DE5C006FE65E /* NSString+NiceInput.m in Sources */ = {isa = PBXBuildFile; fileRef = F1597EA51AD9DE5C006FE65E /* NSString+NiceInput.m */; };
+		F1597EAA1AD9E16E006FE65E /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F1597EA91AD9E16E006FE65E /* Constants.m */; };
 		F185B9B11A6E08F200C66AFD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = F185B9B01A6E08F200C66AFD /* User.m */; };
-		F185B9B41A6E0CD000C66AFD /* TipCalcConst.m in Sources */ = {isa = PBXBuildFile; fileRef = F185B9B31A6E0CD000C66AFD /* TipCalcConst.m */; };
 		F185B9B71A6E10FE00C66AFD /* CurrentUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F185B9B61A6E10FE00C66AFD /* CurrentUser.m */; };
 		F185B9BD1A6E1E6600C66AFD /* Bill.m in Sources */ = {isa = PBXBuildFile; fileRef = F185B9BC1A6E1E6600C66AFD /* Bill.m */; };
+		F19774741ADA55A100D42A97 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F19774731ADA55A100D42A97 /* Helper.m */; };
 		F1B5CE6C1A6E07BB00C9B59F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B5CE6B1A6E07BB00C9B59F /* main.m */; };
 		F1B5CE6F1A6E07BB00C9B59F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B5CE6E1A6E07BB00C9B59F /* AppDelegate.m */; };
 		F1B5CE721A6E07BB00C9B59F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1B5CE711A6E07BB00C9B59F /* ViewController.m */; };
@@ -31,14 +36,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F145ADC71ADAEF8D00B0EA74 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingTableViewController.h; path = ../SettingTableViewController.h; sourceTree = "<group>"; };
+		F145ADC81ADAEF8D00B0EA74 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingTableViewController.m; path = ../SettingTableViewController.m; sourceTree = "<group>"; };
+		F1597E9E1AD9CE17006FE65E /* SplitBillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitBillCell.h; sourceTree = "<group>"; };
+		F1597E9F1AD9CE17006FE65E /* SplitBillCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitBillCell.m; sourceTree = "<group>"; };
+		F1597EA11AD9D023006FE65E /* NSNumber+NiceFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+NiceFormatter.h"; sourceTree = "<group>"; };
+		F1597EA21AD9D023006FE65E /* NSNumber+NiceFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+NiceFormatter.m"; sourceTree = "<group>"; };
+		F1597EA41AD9DE5C006FE65E /* NSString+NiceInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NiceInput.h"; sourceTree = "<group>"; };
+		F1597EA51AD9DE5C006FE65E /* NSString+NiceInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NiceInput.m"; sourceTree = "<group>"; };
+		F1597EA81AD9E16E006FE65E /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		F1597EA91AD9E16E006FE65E /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		F185B9AF1A6E08F200C66AFD /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		F185B9B01A6E08F200C66AFD /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		F185B9B21A6E0CD000C66AFD /* TipCalcConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCalcConst.h; sourceTree = "<group>"; };
-		F185B9B31A6E0CD000C66AFD /* TipCalcConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCalcConst.m; sourceTree = "<group>"; };
 		F185B9B51A6E10FE00C66AFD /* CurrentUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentUser.h; sourceTree = "<group>"; };
 		F185B9B61A6E10FE00C66AFD /* CurrentUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentUser.m; sourceTree = "<group>"; };
 		F185B9BB1A6E1E6600C66AFD /* Bill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bill.h; sourceTree = "<group>"; };
 		F185B9BC1A6E1E6600C66AFD /* Bill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bill.m; sourceTree = "<group>"; };
+		F19774721ADA55A100D42A97 /* Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
+		F19774731ADA55A100D42A97 /* Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
 		F1B5CE661A6E07BB00C9B59F /* Tip Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip Calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1B5CE6A1A6E07BB00C9B59F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1B5CE6B1A6E07BB00C9B59F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -72,6 +87,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F1597EA71AD9DE6B006FE65E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F1597EA11AD9D023006FE65E /* NSNumber+NiceFormatter.h */,
+				F1597EA21AD9D023006FE65E /* NSNumber+NiceFormatter.m */,
+				F1597EA41AD9DE5C006FE65E /* NSString+NiceInput.h */,
+				F1597EA51AD9DE5C006FE65E /* NSString+NiceInput.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		F1597EAB1AD9E174006FE65E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F1597EA81AD9E16E006FE65E /* Constants.h */,
+				F1597EA91AD9E16E006FE65E /* Constants.m */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 		F185B9A91A6E085000C66AFD /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +121,10 @@
 			children = (
 				F1B5CE701A6E07BB00C9B59F /* ViewController.h */,
 				F1B5CE711A6E07BB00C9B59F /* ViewController.m */,
+				F1597E9E1AD9CE17006FE65E /* SplitBillCell.h */,
+				F1597E9F1AD9CE17006FE65E /* SplitBillCell.m */,
+				F145ADC71ADAEF8D00B0EA74 /* SettingTableViewController.h */,
+				F145ADC81ADAEF8D00B0EA74 /* SettingTableViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -99,6 +138,10 @@
 				F185B9B01A6E08F200C66AFD /* User.m */,
 				F185B9B51A6E10FE00C66AFD /* CurrentUser.h */,
 				F185B9B61A6E10FE00C66AFD /* CurrentUser.m */,
+				F19774721ADA55A100D42A97 /* Helper.h */,
+				F19774731ADA55A100D42A97 /* Helper.m */,
+				F1597EAB1AD9E174006FE65E /* Constants */,
+				F1597EA71AD9DE6B006FE65E /* Categories */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -140,8 +183,6 @@
 				F1B5CE6E1A6E07BB00C9B59F /* AppDelegate.m */,
 				F1B5CE6A1A6E07BB00C9B59F /* Info.plist */,
 				F1B5CE6B1A6E07BB00C9B59F /* main.m */,
-				F185B9B21A6E0CD000C66AFD /* TipCalcConst.h */,
-				F185B9B31A6E0CD000C66AFD /* TipCalcConst.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -264,11 +305,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1597EAA1AD9E16E006FE65E /* Constants.m in Sources */,
 				F185B9B11A6E08F200C66AFD /* User.m in Sources */,
+				F1597EA61AD9DE5C006FE65E /* NSString+NiceInput.m in Sources */,
+				F1597EA01AD9CE17006FE65E /* SplitBillCell.m in Sources */,
+				F145ADC91ADAEF8D00B0EA74 /* SettingTableViewController.m in Sources */,
 				F1B5CE721A6E07BB00C9B59F /* ViewController.m in Sources */,
+				F1597EA31AD9D023006FE65E /* NSNumber+NiceFormatter.m in Sources */,
 				F185B9BD1A6E1E6600C66AFD /* Bill.m in Sources */,
-				F185B9B41A6E0CD000C66AFD /* TipCalcConst.m in Sources */,
 				F1B5CE6F1A6E07BB00C9B59F /* AppDelegate.m in Sources */,
+				F19774741ADA55A100D42A97 /* Helper.m in Sources */,
 				F1B5CE6C1A6E07BB00C9B59F /* main.m in Sources */,
 				F185B9B71A6E10FE00C66AFD /* CurrentUser.m in Sources */,
 			);

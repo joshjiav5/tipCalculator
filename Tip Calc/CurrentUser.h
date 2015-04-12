@@ -13,6 +13,7 @@
 
 + (User *)currentUser;
 + (void)saveCurrentUser;
-+ (void)loadCurrentUser;
++ (void)loadCurrentUserWithTimeCheck;
++ (void)loadCurrentUserWithoutTimeCheck;
 
 @end

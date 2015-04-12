@@ -10,11 +10,12 @@
 
 @interface Bill : NSObject
 
-@property (nonatomic) float billBeforeTip;
-@property (nonatomic) float tip;
-@property (nonatomic) float billAfterTip;
+@property (nonatomic, strong, readonly) NSNumber *billBeforeTip;
+@property (nonatomic, strong, readonly) NSNumber *tipPercentage;
+@property (nonatomic, strong, readonly) NSNumber *tipAmount;
+@property (nonatomic, strong, readonly) NSNumber *billAfterTip;
 
-- (NSString *)splitBillWithWays:(int)ways;
-- (NSString *)twoDigitStringWithFloat:(float)number;
+- (id)initWithAmount:(NSString *)amount tipPercentage:(NSString *)tipPercentage;
+- (NSNumber *)splitBillWithWays:(NSInteger)ways;
 
 @end
