@@ -21,10 +21,10 @@ Completed
 ---
 
 * [x] Just4Fun: Awesome Logo included
-* [x] Just4Fun: Split bill in any way (Adjuestble in setting)
-* [x] Just4Fun: View will auto adjuest according to keyboard height (Turn off "Use Number Keyboard Only")
+* [x] Just4Fun: Split the total bill in any way (Adjuestble in setting)
+* [x] Just4Fun: UI will auto adjuest according to keyboard height (Turn off "Use Number Keyboard Only")
 * [x] Just4Fun: A great setting page, give it a go
-* [x] Just4Fun: Error checking (How exciting)
+* [x] Just4Fun: Nice Error checking!!!!!
 
 ---
 
