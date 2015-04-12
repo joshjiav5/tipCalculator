@@ -195,12 +195,21 @@
 - (void)addObservers {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(endEditing) name:UIApplicationWillResignActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActive:) name:UIApplicationWillResignActiveNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
 }
 
 - (void)removeObservers {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
+}
+
+- (void)applicationWillResignActive:(NSNotification*)notification {
+    [self endEditing];
+}
+
+- (void)applicationDidBecomeActive:(NSNotification*)notification {
+    [self.amountTextField becomeFirstResponder];
 }
 
 #pragma mark - Auto Layout
