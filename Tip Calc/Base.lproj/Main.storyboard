@@ -217,7 +217,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calc" id="GvS-Wn-ENy">
-                        <barButtonItem key="rightBarButtonItem" title="Setting" id="kj6-XA-12T">
+                        <barButtonItem key="rightBarButtonItem" image="settings_line" id="kj6-XA-12T">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="5dP-La-ooa" kind="show" id="fJm-ZB-fXS"/>
@@ -536,4 +536,7 @@
             <point key="canvasLocation" x="389" y="1047"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="settings_line" width="23" height="23"/>
+    </resources>
 </document>

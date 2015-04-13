@@ -36,8 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F145ADC71ADAEF8D00B0EA74 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingTableViewController.h; path = ../SettingTableViewController.h; sourceTree = "<group>"; };
-		F145ADC81ADAEF8D00B0EA74 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingTableViewController.m; path = ../SettingTableViewController.m; sourceTree = "<group>"; };
+		F145ADC71ADAEF8D00B0EA74 /* SettingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingTableViewController.h; sourceTree = "<group>"; };
+		F145ADC81ADAEF8D00B0EA74 /* SettingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingTableViewController.m; sourceTree = "<group>"; };
 		F1597E9E1AD9CE17006FE65E /* SplitBillCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitBillCell.h; sourceTree = "<group>"; };
 		F1597E9F1AD9CE17006FE65E /* SplitBillCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitBillCell.m; sourceTree = "<group>"; };
 		F1597EA11AD9D023006FE65E /* NSNumber+NiceFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+NiceFormatter.h"; sourceTree = "<group>"; };
